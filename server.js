@@ -3,7 +3,9 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const { MongoClient } = require('mongodb');
 
-const app = express();
+const app = require('./app');
+
+// const app = express();
 const port = 3000;
 
 const uri = 'mongodb://localhost:27017';
