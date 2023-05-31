@@ -9,7 +9,7 @@ fetch('https://api.nasa.gov/planetary/apod?api_key=fjBWTdYh5E38CxFPr8zyo69niO8h5
     // Update the image container with the fetched image
     const image = document.createElement('a');
     image.href = data.url;
-    // image.alt = data.title;
+    image.innerText = data.title;
     imageContainer.appendChild(image);
   })
   .catch(error => {
