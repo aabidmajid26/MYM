@@ -13,8 +13,8 @@ const client = new MongoClient(uri, { useUnifiedTopology: true });
 passport.use(
   new GoogleStrategy(
     {
-      clientID: GOOGLE_CLIENT_ID,
-      clientSecret: GOOGLE_CLIENT_SECRET,
+      clientID: "481734905797-q3arcari3nf4spu9316ob8fhp0is7r1g.apps.googleusercontent.com",
+      clientSecret: "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",
       callbackURL: '/auth/google/callback',
     },
     (accessToken, refreshToken, profile, done) => {
